@@ -34,5 +34,9 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: x86
-        path: Release/*
+        path: Win32/Release/*
         
+    - uses: actions/upload-artifact@v2
+      with:
+        name: x64
+        path: x64/Release/*
